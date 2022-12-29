@@ -16,7 +16,8 @@ cd R-4.1.0
 ./configure --with-cairo --enable-R-shlib --with-blas --with-lapack
 make
 make check
-make pdf && make info
+make pdf
+make info
 
 ## Finally, add symbolic links for the R and Rscript binaries with sudo
 sudo ln -s ~/Apps/R-4.2.1/bin/R /usr/local/bin/R 
